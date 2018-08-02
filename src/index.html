@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EMaker</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+</head>
+<body>
+  <div id="bg">
+    <div id="dark-layer">
+      <div class="my-container">
+        <ul id="scene">
+          <li id="large-point" class="layer" data-depth="0.20"><img src="assets/large-point2.png"></li>
+          <li id="small-point" class="layer" data-depth="0.40"><img src="assets/small-point2.png"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <app-root></app-root>
+  <script>
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+  </script>
+</body>
+</html>

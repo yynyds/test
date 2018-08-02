@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+}
+
+/* #dark-layer {
+    width: 500px;
+    height: 700px;
+    background-color: black;
+    opacity: 0.3;
+} */
+
+#bg {
+    margin-top: -15px;
+    background: url(../src/assets/bg2-1.jpg) no-repeat top center;
+    height: 700px;
+    width: 100%;
+}
+#scene {
+    width: 100%;
+}
+#large-point {
+    margin-left: 170px;
+}
+#small-point {
+    margin-left: 150px;
+}
