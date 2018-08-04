@@ -1,0 +1,29 @@
+<div class="my-container">
+  <div class="row">
+    <form class="my-form">
+      <div class="row">
+        <div class="input-field col m12">
+          <input id="password" type="password" class="validate" required minlength="6" maxlength="12" ngModel name="password" #password="ngModel"
+            (change)="log(password)">
+          <div class="alert-denger" *ngIf="password.touched && !password.valid">
+            <div *ngIf="password.errors.required">
+              Password is required</div>
+            <div *ngIf="password.errors.minlength">
+              Password should be minimum {{ password.errors.minlength.requiredLength }} characters</div>
+          </div>
+          <label for="password" class="active">Password</label>
+        </div>
+        <div class="input-field col m12">
+          <input id="email" type="email" class="validate" required ngModel name="email" email #email="ngModel" (change)="log(email)">
+          <div class="alert-denger" *ngIf="email.touched && !email.valid">
+            <div *ngIf="email.errors.required">
+              Email is required</div>
+            <div *ngIf="email.errors?.email">
+              Email is invalid</div>
+          </div>
+          <label for="email" class="active">Email</label>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
